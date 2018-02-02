@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   @@count=0
   @@genres= []
@@ -44,5 +45,6 @@ class Song
     end
     return hash
   end
+  binding.pry 
 
 end
