@@ -31,21 +31,21 @@ class Song
       if @@genre_count.has_key?(genre) == false
         @@genre_count[genre] = 1
       else #increment by 1
-        @@genre_count[genre] += 1 
+        @@genre_count[genre] += 1
       end
     end
-    return @@genre_count 
+    return @@genre_count
   end
   def self.artist_count
-    
+
     @@artists.each do |artist|
-      if genre_count.has_key?(artist) == false
+      if artist_count.has_key?(artist) == false
         @@artist_count[artist] = 1
       else #increment by 1
         @@artist_count[artist] += 1
       end
     end
-    return @@artist_count 
+    return @@artist_count
   end
   binding.pry
 
