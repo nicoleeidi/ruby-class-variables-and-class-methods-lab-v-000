@@ -28,24 +28,24 @@ class Song
   def self.genre_count
     hash= {}
     @@genres.each do |genre|
-      if hash.has_key?(genre) == false
-        hash[genre] = 1
+      if @@genre_count.has_key?(genre) == false
+        @@genre_count[genre] = 1
       else #increment by 1
-        hash[genre] = hash[genre] + 1
+        @@genre_count[genre] += 1 
       end
     end
-    return hash
+    return @@genre_count 
   end
   def self.artist_count
-    hash={}
+    
     @@artists.each do |artist|
-      if artists.has_key?(artist) == false
-        hash[artist] = 1
+      if genre_count.has_key?(artist) == false
+        @@artist_count[artist] = 1
       else #increment by 1
-        hash[artist] = hash[artist] + 1
+        @@artist_count[artist] += 1
       end
     end
-    return hash
+    return @@artist_count 
   end
   binding.pry
 
