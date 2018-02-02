@@ -26,7 +26,6 @@ class Song
     @@genres.uniq
   end
   def self.genre_count
-    hash= {}
     @@genres.each do |genre|
       if @@genre_count.has_key?(genre) == false
         @@genre_count[genre] = 1
