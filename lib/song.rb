@@ -3,6 +3,8 @@ class Song
   @@count=0
   @@genres= []
   @@artists= []
+  @@artist_count= {}
+  @@genre_count= {}
   attr_accessor :name
   attr_accessor :artist
   attr_accessor :genre
@@ -45,6 +47,6 @@ class Song
     end
     return hash
   end
-  binding.pry 
+  binding.pry
 
 end
