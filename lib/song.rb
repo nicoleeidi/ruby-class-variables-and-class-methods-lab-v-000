@@ -24,8 +24,8 @@ class Song
     @@genres.each do |genre|
       if hash.has_key?(genre) == false
         hash[genre] = 1
-      else #increment by 1 
-        hash[genre]
+      else #increment by 1
+        hash[genre] = hash[genre] + 1 
       end
     end
   end
