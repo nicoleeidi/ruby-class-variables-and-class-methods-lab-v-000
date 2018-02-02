@@ -24,7 +24,9 @@ class Song
     @@genres.each do |genre|
       if hash.has_key?(genre) == false
         hash[genre] = 1
-      end 
+      else #increment by 1 
+        hash[genre]
+      end
     end
   end
   def self.artist_count
